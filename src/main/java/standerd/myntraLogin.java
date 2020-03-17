@@ -32,9 +32,11 @@ public class myntraLogin extends genericUtilities{
 		Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_ESCAPE);
 		
+		//read the property file 
 		Properties obj = new Properties();					
 	    FileInputStream objfile = new FileInputStream(System.getProperty("user.dir")+"\\element.properties");									
 	    obj.load(objfile);	
+	    
 		String username = "thupatidileep@gmail.com";
 		String password = "dileep335";
 //		waitforelement(By.xpath(obj.getProperty("usernamexapth")));
